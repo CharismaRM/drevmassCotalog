@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220825133241">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220829002243">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -314,7 +314,40 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220825133241"></script>
+
+	<div id="popupform" aria-hidden="true" class="popup popupform">
+		<div class="popup__wrapper">
+			<div class="popup__content callback">
+				<div class="callback__header">
+					<h2 class="callback__title">Заказать звонок</h2>
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<h3 class="callback__subtitle">Мы перезвоним Вам и ответим на Ваши вопросы</h3>
+				<div class="callback__form form">
+					<div class="form__line ">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше Имя" class="input ">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон" class="input ">
+					</div>
+
+
+				</div>
+				<div class="callback__text ">Количество товара ограничено! <br> Закажите Древмасс сейчас!</div>
+				<button type="button" data-popup="#popupthx" type="submit" class="button">Отправить</button>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="popupthx" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content thx">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="thx__title">СПАСИБО!</div>
+				<div class="thx__text">Мы перезвоним Вам <br> в ближайшее время</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220829002243"></script>
 </body>
 
 </html>
