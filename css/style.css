@@ -3734,11 +3734,11 @@ body::after {
   }
 
   .choice__item {
-    height: 273px;
+    height: auto;
   }
 
   .choice__item_other {
-    height: 273px;
+    height: auto;
   }
 
   .choice__top {
