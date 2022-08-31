@@ -186,6 +186,7 @@ textarea {
 }
 
 .input {
+  font-family: Madeevolvesans;
   border-radius: 0 !important;
   width: 100%;
   display: block;
@@ -195,6 +196,26 @@ textarea {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   margin: 0px 0px 20px 0px;
+}
+
+.input::-webkit-input-placeholder {
+  font-family: Madeevolvesans;
+}
+
+.input::-moz-placeholder {
+  font-family: Madeevolvesans;
+}
+
+.input:-ms-input-placeholder {
+  font-family: Madeevolvesans;
+}
+
+.input::-ms-input-placeholder {
+  font-family: Madeevolvesans;
+}
+
+.input::placeholder {
+  font-family: Madeevolvesans;
 }
 
 textarea.input {
@@ -340,7 +361,7 @@ body::after {
 .callback__title {
   text-align: center;
   color: #fff;
-  font-family: "MADE Evolve Sans";
+  font-family: "Madeevolvesansmedium";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -348,7 +369,7 @@ body::after {
 }
 
 .callback__subtitle {
-  font-family: "MADE Evolve Sans";
+  font-family: "Madeevolvesans";
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -370,7 +391,7 @@ body::after {
 }
 
 .callback__text {
-  font-family: "MADE Evolve Sans";
+  font-family: "Madeevolvesans";
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -422,7 +443,7 @@ body::after {
 
 .thx__title {
   color: #fff;
-  font-family: "MADE Evolve Sans";
+  font-family: "Madeevolvesansmedium";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -436,6 +457,7 @@ body::after {
   color: #fff;
   text-align: center;
   line-height: 1.4375;
+  margin: 0px 0px 10px 0px;
 }
 
 [class*=-ibg] {
