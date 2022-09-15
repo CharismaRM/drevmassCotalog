@@ -1005,7 +1005,7 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1013,8 +1013,8 @@ body::after {
 }
 
 .footer__call-icon img {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
 }
 
 .footer__numbers {
@@ -1913,7 +1913,7 @@ body::after {
 }
 
 .five-rollers__description {
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.5);
   padding: 5px 12px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 59%;
@@ -2161,6 +2161,9 @@ body::after {
   display: block;
   top: 10%;
   left: -20px;
+  -webkit-transform: translate(0px, 5px);
+      -ms-transform: translate(0px, 5px);
+          transform: translate(0px, 5px);
 }
 
 .acquaintance__list_forbody li::before {
@@ -2176,10 +2179,6 @@ body::after {
 
 .acquaintance__list_mob {
   margin: 30px 0px;
-}
-
-.acquaintance__list_mob li::before {
-  display: none;
 }
 
 .acquaintance__text {
@@ -2202,11 +2201,22 @@ body::after {
 }
 
 .acquaintance__text_more {
-  margin: 0px 0px 0px 48px;
+  padding: 24px 34px 20px 48px;
+  background: #FFFFFF;
+  /* тень */
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 .acquaintance__text_mat {
   margin-top: 50px;
+}
+
+.acquaintance__text_end {
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 50%;
 }
 
 .acquaintance__text_seven {
@@ -2228,10 +2238,6 @@ body::after {
   /* or 153% */
   /* gray2 */
   color: #585149;
-}
-
-.acquaintance__text_mob::before {
-  display: none;
 }
 
 .acquaintance__more {
@@ -2263,6 +2269,13 @@ body::after {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+}
+
+.acquaintance__right_end {
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 50%;
 }
 
 .acquaintance__subtitle-black {
@@ -2368,6 +2381,17 @@ body::after {
   text-transform: uppercase;
   color: #000000;
   margin: 0px 0px 60px 0px;
+}
+
+.choice__subtitle_mat {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  /* or 158% */
+  text-align: center;
+  /* black */
+  color: #000000;
+  text-transform: none;
 }
 
 .choice__items {
@@ -2558,10 +2582,6 @@ body::after {
   max-height: 800px;
 }
 
-.pain__image_seven img {
-  max-height: 800px;
-}
-
 .pain__image_forbody {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2592,6 +2612,11 @@ body::after {
   line-height: 30px;
   color: #585149;
   margin: 0px 0px 20px 0px;
+}
+
+.pain__gray-text_light {
+  font-size: 17px;
+  font-family: Madeevolvesanslight;
 }
 
 .pain__black-text {
@@ -3923,17 +3948,34 @@ body::after {
           justify-content: space-between;
 }
 
+.fast__items_mat {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .fast__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
 }
 
+.fast__item_mat {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23%;
+          flex: 0 1 23%;
+}
+
+.fast__item_seven {
+  height: 300px;
+}
+
 .fast__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 15px;
+  padding: 10px 15px;
+  display: flex;
+  height: 115px;
   background: #EAEAEA;
 }
 
@@ -3948,6 +3990,12 @@ body::after {
 
 .fast__video img {
   width: 100%;
+}
+
+.fast__icon {
+  -webkit-transform: translate(0px, -20%);
+      -ms-transform: translate(0px, -20%);
+          transform: translate(0px, -20%);
 }
 
 .fast__text {
@@ -3966,8 +4014,18 @@ body::after {
   /* identical to box height */
   text-align: center;
   text-transform: uppercase;
-  padding: 40px;
-  background: #fff;
+  padding: 40px 0px;
+  background: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   /* black */
   color: #000000;
 }
@@ -3975,6 +4033,10 @@ body::after {
 .fast__text_green {
   background: #00B1AA;
   color: #fff;
+}
+
+.fast__image {
+  width: 100%;
 }
 
 .fast__image img {
@@ -4743,7 +4805,6 @@ body::after {
 }
 
 .image-mini-slider__slide {
-  opacity: 0.2;
   -webkit-transition: opacity 0.3s ease 0s;
   -o-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
@@ -5192,6 +5253,10 @@ body::after {
 
   .acquaintance__list li {
     margin: 0px 0px 0px 20px;
+  }
+
+  .acquaintance__list_mob li::before {
+    display: none;
   }
 
   .acquaintance__text {
