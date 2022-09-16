@@ -1360,6 +1360,9 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
 }
 
 .catalog__name {
@@ -1871,6 +1874,7 @@ body::after {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 48%;
           flex: 0 1 48%;
+  cursor: pointer;
 }
 
 .five-rollers__images img {
@@ -5153,6 +5157,12 @@ body::after {
     line-height: 30px;
   }
 
+  .catalog__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
   .page__products {
     padding: 60px 0px;
   }
@@ -5330,11 +5340,11 @@ body::after {
   }
 
   .choice__item {
-    height: auto;
+    height: 390px;
   }
 
   .choice__item_other {
-    height: auto;
+    height: 390px;
   }
 
   .choice__top {
