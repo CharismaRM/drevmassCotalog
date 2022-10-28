@@ -484,6 +484,7 @@ body::after {
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
+  line-height: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,6 +492,11 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #000000;
@@ -500,6 +506,9 @@ body::after {
 .title p {
   color: #fff;
   padding: 0px 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .subtitle {
@@ -1173,9 +1182,12 @@ body::after {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background: #00B1AA;
   color: #fff;
   padding: 3px 10px;
+}
+
+.main-block__title_green p {
+  background: #00B1AA;
 }
 
 .main-block__items {
@@ -1637,6 +1649,10 @@ body::after {
   width: 100%;
 }
 
+.products__sale_solo {
+  margin-top: 30px;
+}
+
 .products__new {
   font-family: "Madeevolvesansbold";
   font-style: normal;
@@ -1856,7 +1872,6 @@ body::after {
 
 .five-rollers__title p {
   background: #00B1AA;
-  padding: 0px 5px;
 }
 
 .five-rollers__content {
@@ -2633,6 +2648,10 @@ body::after {
   width: 100%;
 }
 
+.pain__image_seven {
+  max-height: 530px;
+}
+
 .pain__image_forbody {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3390,10 +3409,6 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3406,7 +3421,7 @@ body::after {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0px 0px 27px 0px;
-  gap: 1px;
+  row-gap: 1px;
 }
 
 .about-video__title p {
@@ -3516,6 +3531,8 @@ body::after {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0px 0px 60px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .because__title p {
@@ -3824,6 +3841,10 @@ body::after {
   margin: 30px 0px 30px 0px;
 }
 
+.booking__btns {
+  margin-top: 32px;
+}
+
 .booking__economy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4087,6 +4108,10 @@ body::after {
   padding: 0;
 }
 
+.fast__top_six {
+  height: auto;
+}
+
 .fast__video {
   cursor: pointer;
   position: relative;
@@ -4311,6 +4336,26 @@ body::after {
 }
 
 .five-spikes__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.five-spikes__title p {
   background: #00B1AA;
 }
 
@@ -5218,7 +5263,6 @@ body::after {
 
   .title {
     font-weight: 400;
-    font-size: 20px;
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
@@ -5237,10 +5281,6 @@ body::after {
   }
 
   .mobile__disabled {
-    display: none;
-  }
-
-  .none-mobile {
     display: none;
   }
 
@@ -5331,7 +5371,7 @@ body::after {
     padding: 60px 0px 60px 0px;
   }
 
-  .five-rollers__title p {
+  .five-rollers__title p p {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -5344,10 +5384,6 @@ body::after {
     line-height: 30px;
     padding: 0;
     line-height: 46px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 
   .five-rollers__content {
@@ -5538,10 +5574,6 @@ body::after {
     font-size: 29px;
     line-height: 30px;
     padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 
   .choice__subtitle {
@@ -5592,10 +5624,6 @@ body::after {
     line-height: 30px;
     padding: 0;
     gap: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 
   .pain__title_mat {
@@ -5777,6 +5805,8 @@ body::after {
 
   .trail__title {
     margin: 0px 0px 20px 0px;
+    line-height: 30px;
+    font-size: 20px;
   }
 
   .trail__items {
@@ -5816,6 +5846,8 @@ body::after {
 
   .result__title {
     margin: 0px 0px 20px 0px;
+    line-height: 30px;
+    font-size: 20px;
   }
 
   .result__title_mat {
@@ -5855,7 +5887,7 @@ body::after {
     font-size: 29px;
     line-height: 30px;
     padding: 0;
-    display: block;
+    gap: 0;
   }
 
   .about-video__item {
@@ -5883,10 +5915,6 @@ body::after {
     font-size: 29px;
     line-height: 30px;
     padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 
   .because__items {
@@ -6158,6 +6186,20 @@ body::after {
     padding: 60px 0px;
   }
 
+  .five-spikes__title p {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
+  .five-spikes__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 30px;
+    padding: 0;
+  }
+
   .five-spikes__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6325,6 +6367,16 @@ body::after {
     padding: 60px 0px 60px 0px;
   }
 
+  .use__title {
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+    text-align: center;
+    text-transform: uppercase;
+    /* black */
+    color: #000000;
+  }
+
   .use__subtitle {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -6402,6 +6454,10 @@ body::after {
   }
 
   .image-mini-slider {
+    display: none;
+  }
+
+  p.none-mobile {
     display: none;
   }
 }
