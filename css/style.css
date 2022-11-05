@@ -598,7 +598,7 @@ body::after {
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #fff;
-  background: #01968e;
+  background: #00B1AA;
   background: -o-linear-gradient(315deg, #01968e 0%, #21dd72 50%, #05c44e 51%, #01968e 71%, #01968e 100%);
   background: linear-gradient(135deg, #01968e 0%, #21dd72 50%, #05c44e 51%, #01968e 71%, #01968e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#01968e", endColorstr="#01968e",GradientType=1 );
@@ -852,7 +852,7 @@ body::after {
 }
 
 .menu__body {
-  overflow: auto;
+  overflow: hidden;
   padding: 20px;
   background: #00B1AA;
   border-radius: 20px;
@@ -1175,6 +1175,7 @@ body::after {
 .main-block__title {
   font-size: 30px;
   line-height: 1.1666666667;
+  font-family: Madeevolvesans;
 }
 
 .main-block__title_green {
@@ -1356,6 +1357,9 @@ body::after {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .catalog__item {
@@ -1510,6 +1514,11 @@ body::after {
   padding: 0px 5px;
   margin: 0px 0px 20px 0px;
   color: #FFFFFF;
+}
+
+.products__title {
+  font-size: 36px;
+  line-height: 46px;
 }
 
 .products__objects {
@@ -1822,6 +1831,7 @@ body::after {
 
 .products__btn_more {
   background: #FFFFFF;
+  font-family: "Madeevolvesansmedium";
   /* green1 */
   border: 2px solid #00B1AA;
   /* тень */
@@ -1970,6 +1980,7 @@ body::after {
 }
 
 .five-rollers__info {
+  font-family: "Madeevolvesanslight";
   font-style: normal;
   font-weight: 300;
   font-size: 17px;
@@ -2541,6 +2552,10 @@ body::after {
   text-align: center;
 }
 
+.choice__text {
+  color: #585149;
+}
+
 .choice__image img {
   width: 100%;
 }
@@ -2642,6 +2657,7 @@ body::after {
 
 .pain__image {
   width: 100%;
+  overflow: hidden;
 }
 
 .pain__image img {
@@ -3367,7 +3383,6 @@ body::after {
   font-size: 17px;
   line-height: 30px;
   /* or 158% */
-  height: 200px;
   /* black */
   color: #000000;
 }
@@ -5098,6 +5113,10 @@ body::after {
         -ms-transform: translate(-50%, -80%);
             transform: translate(-50%, -80%);
   }
+
+  .result__text {
+    height: 200px;
+  }
 }
 
 @media (max-width: 61.99875em) {
@@ -5367,6 +5386,23 @@ body::after {
     padding: 60px 0px;
   }
 
+  .products__title {
+    font-size: 29px;
+    line-height: 30px;
+    /* or 103% */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    /* black */
+    color: #000000;
+  }
+
   .page__five-rollers {
     padding: 60px 0px 60px 0px;
   }
@@ -5407,6 +5443,7 @@ body::after {
 
   .five-rollers__text {
     margin: 0px 0px 20px 0px;
+    font-size: 17px;
   }
 
   .five-rollers__btns {
@@ -5414,6 +5451,7 @@ body::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 30px 0px 0px 0px;
   }
 
   .page__acquaintance {
@@ -5517,6 +5555,7 @@ body::after {
 
   .acquaintance__text {
     font-size: 17px;
+    line-height: 26px;
   }
 
   .acquaintance__text_more {
@@ -5658,12 +5697,31 @@ body::after {
     max-height: 580px;
   }
 
+  .pain__gray-text_top {
+    line-height: 24px;
+    font-size: 17px;
+    font-family: "Madeevolvesanslight";
+  }
+
+  .pain__list li {
+    font-size: 17px;
+    line-height: 24px;
+    /* or 141% */
+    /* black */
+    color: #000000;
+  }
+
   .pain__list_one img {
     max-width: 300px;
   }
 
   .pain__bottom {
     margin: 0px 0px 0px 0px;
+  }
+
+  .pain__info {
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .pain__text {
@@ -5817,6 +5875,17 @@ body::after {
     gap: 0px;
   }
 
+  .trail__top {
+    font-size: 17px;
+    line-height: 26px;
+    padding: 10px 20px;
+  }
+
+  .trail__point {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
   .trail__white {
     background: #EAEAEA;
   }
@@ -5870,6 +5939,10 @@ body::after {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+  }
+
+  .result__text {
+    padding: 20px;
   }
 
   .result__text_center {
