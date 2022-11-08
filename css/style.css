@@ -572,7 +572,6 @@ body::after {
 }
 
 .btn:hover {
-  background: #00948E;
   /* тень */
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -624,9 +623,7 @@ body::after {
 }
 
 .therapy__btn:hover {
-  -webkit-transform: translate(0px, -5px);
-  -ms-transform: translate(0px, -5px);
-  transform: translate(0px, -5px);
+  color: #000;
 }
 
 .play {
@@ -1302,7 +1299,7 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 32px;
+  gap: 28px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1312,6 +1309,13 @@ body::after {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 70%;
           flex: 0 1 70%;
+}
+
+.main-block__installment {
+  font-family: Madeevolvesanslight;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
 }
 
 .page__catalog {
@@ -1663,7 +1667,7 @@ body::after {
 }
 
 .products__new {
-  font-family: "Madeevolvesansbold";
+  font-family: "Madeevolvesansmedium";
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -1843,6 +1847,7 @@ body::after {
 
 .products__btn_more:hover {
   color: #fff;
+  background: #00948E;
 }
 
 .page__five-rollers {
@@ -1930,8 +1935,7 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  gap: 5px;
-  margin: 0px 0px 20px 0px;
+  gap: 3px;
 }
 
 .five-rollers__item {
@@ -1948,10 +1952,20 @@ body::after {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 39%;
           flex: 0 1 39%;
+  font-size: 19px;
+  line-height: 22px;
+  /* identical to box height */
+  /* black */
+  color: #000000;
 }
 
 .five-rollers__description {
   background: rgba(255, 255, 255, 0.5);
+  font-size: 19px;
+  line-height: 22px;
+  /* identical to box height */
+  /* black */
+  color: #000000;
   padding: 5px 12px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 59%;
@@ -1992,6 +2006,17 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   color: #585149;
+}
+
+.five-rollers__sale {
+  gap: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .five-rollers__text {
@@ -2172,6 +2197,8 @@ body::after {
 
 .acquaintance__subtitle {
   color: #585149;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .acquaintance__list {
@@ -2554,6 +2581,7 @@ body::after {
 
 .choice__text {
   color: #585149;
+  font-size: 17px;
 }
 
 .choice__image img {
@@ -2658,14 +2686,29 @@ body::after {
 .pain__image {
   width: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .pain__image img {
   width: 100%;
 }
 
-.pain__image_seven {
-  max-height: 530px;
+.pain__image_spikes {
+  max-height: 700px;
+}
+
+.pain__image_spikes img {
+  -o-object-position: top;
+     object-position: top;
+  width: 85%;
 }
 
 .pain__image_forbody {
@@ -3098,6 +3141,10 @@ body::after {
           transform: translate(0px, 0px);
 }
 
+.how__look_forbody {
+  width: 155px;
+}
+
 .how__look_no-arrow {
   margin: 30px 0px 0px 48px;
 }
@@ -3205,6 +3252,8 @@ body::after {
 .trail__title {
   margin: 0px 0px 60px 0px;
   font-family: "Madeevolvesans";
+  font-size: 30px;
+  line-height: 35px;
 }
 
 .trail__items {
@@ -3318,6 +3367,7 @@ body::after {
 .result__title {
   margin: 0px 0px 60px 0px;
   font-family: "Madeevolvesans";
+  font-size: 30px;
 }
 
 .result__title p {
@@ -3380,7 +3430,7 @@ body::after {
   background: #fff;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 30px;
   /* or 158% */
   /* black */
@@ -5117,6 +5167,10 @@ body::after {
   .result__text {
     height: 200px;
   }
+
+  .because__subtitle {
+    width: 87%;
+  }
 }
 
 @media (max-width: 61.99875em) {
@@ -5437,8 +5491,17 @@ body::after {
     gap: 0px;
   }
 
+  .five-rollers__point {
+    font-size: 17px;
+    line-height: 24px;
+    font-family: Madeevolvesanslight;
+  }
+
   .five-rollers__description {
     background: #fff;
+    font-size: 17px;
+    line-height: 24px;
+    font-family: Madeevolvesanslight;
   }
 
   .five-rollers__text {
@@ -5943,6 +6006,8 @@ body::after {
 
   .result__text {
     padding: 20px;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .result__text_center {
