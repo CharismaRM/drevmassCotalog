@@ -1742,10 +1742,9 @@ body::after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 100%;
   /* green3 */
   color: #00948E;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 20px 0px;
 }
 
 .products__text {
