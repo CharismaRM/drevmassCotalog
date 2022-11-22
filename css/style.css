@@ -694,6 +694,14 @@ body::after {
           justify-content: space-between;
 }
 
+.header__logo {
+  max-width: 115px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
 .header__item {
   display: -webkit-box;
   display: -ms-flexbox;
