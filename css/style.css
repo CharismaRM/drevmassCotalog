@@ -1001,7 +1001,7 @@ body::after {
 .footer__title {
   font-size: 24px;
   font-family: Madeevolvesansmedium;
-  margin: 0px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
 }
 
 .footer__call {
@@ -5459,6 +5459,9 @@ body::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .footer__item {
